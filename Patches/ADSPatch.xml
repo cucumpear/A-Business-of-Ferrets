@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>A Dog Said... Animal Prosthetics</modName>
+				<yourMod>A Business of Ferrets</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName =
+					   "OldWoundsAnimal"
+					or "InstallSimpleProstheticTailAnimal"
+					or "InstallPowerClawAnimal"
+					or "InstallPegLegAnimal"
+					or "InstallSimpleProstheticLegAnimal"
+					or "InstallBionicLegAnimal"
+					or "InstallNoseAnimalSimple"
+					or "InstallBionicEyeAnimal"
+					or "InstallEarAnimalSimple"
+					or "InstallEarAnimalBionic"
+					or "InstallJawAnimalSimple"
+					or "InstallJawAnimalBionic"
+					or "InstallSpineAnimalSimple"
+					or "InstallSpineAnimalBionic"
+					or "InstallAnimalBrainStimulator"
+					or "InstallBionicAnimalHeart"
+					or "InstallBionicAnimalLung"
+					or "InstallBionicAnimalLiver"
+					or "InstallBionicAnimalKidney"
+					or "InstallBionicAnimalStomach"
+				]/recipeUsers</xpath>
+				<value>
+					<li>ACPFerret</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
